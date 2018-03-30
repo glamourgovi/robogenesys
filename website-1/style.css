@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    //background-color: silver;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.head{
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left:0;
+    position: relative;
+}
+.head .title{
+    height: 100px;
+    width: 100%;
+}
+.head .title img{
+    height: 80%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.head .title h2{
+    float: left;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 3em;
+    margin-left: 20px;
+}
+.head .nav{
+    height: 50px;
+    width: 100%;
+}
+.nav{
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+}
+.head .nav ul{
+    list-style-type: none;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.head .nav ul .right{
+    //float: right;
+}
+.head .nav ul li{
+    display: inline-block;
+    text-align: center;
+    line-height: 1.8;
+}
+.head .nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    border-left: 1px solid silver;
+}
+.activ{
+    border-top: 4px solid red;
+}
+.head .nav ul li a:hover{
+    border-top: 4px solid red;
+}
+
+
+/*Slider.........*/
+
+
+.slider{
+    height:450px; 
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+.slider .container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+}
+.slider .container{
+    //display: none;
+}
+.slider .container img{
+    width: 100%;
+    z-index: 0;
+    //display: none;
+}
+.slider .container ul{
+    list-style-type: none;
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 100px;
+}
+.slider .container ul li a{
+    text-decoration: none;
+}
+.slider .container ul li{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid silver;
+    
+}
+.slider .container #social li{
+    transform-origin: left;
+    transition: 1s;
+    transform: rotateY(90deg);
+}
+.slider .container #eft{
+    margin-left: 300px;
+}
+.slider .container #eft li{
+    height: 70px;
+    width: 70px;
+    padding: 0px;
+    position: absolute;
+    transition: 3s;
+    opacity: 0;
+}
+/*
+.slider .container:hover #eft li:nth-child(1)
+{
+    transition-delay: 0s;
+    opacity: 1;
+}
+.slider .container:hover #eft li:nth-child(2)
+{
+    transition-delay: 0.2s;
+    opacity: 1;
+    transform: translateX(70px);
+}
+.slider .container:hover #eft li:nth-child(3)
+{
+    transition-delay: 0.6s;
+    opacity: 1;
+    transform: translateX(140px);
+}
+.slider .container:hover #eft li:nth-child(4)
+{
+    transition-delay: 0.8s;
+    opacity: 1;
+    transform: translateX(210px);
+}
+.slider .container:hover #eft li:nth-child(5)
+{
+    transition-delay: 1s;
+    opacity: 1;
+    transform: translateX(280px);
+}
+.slider .container:hover #eft li:nth-child(6)
+{
+    transition-delay: 1.2s;
+    opacity: 1;
+    transform: translateX(350px);
+}
+.slider .container:hover #eft li:nth-child(7)
+{
+    transition-delay: 1.4s;
+    opacity: 1;
+    transform: translateX(420px);
+}
+.slider .container:hover #eft li:nth-child(8)
+{
+    transition-delay: 1.6s;
+    opacity: 1;
+    transform: translateX(490px);
+}
+.slider .container:hover #eft li:nth-child(9)
+{
+    transition-delay: 1.8s;
+    opacity: 1;
+    transform: translateX(560px);
+}
+.slider .container:hover #eft li:nth-child(10)
+{
+    transition-delay: 2s;
+    opacity: 1;
+    transform: translateX(630px);
+}
+.slider .container:hover #eft li:nth-child(11)
+{
+    transition-delay: 2.2s;
+    opacity: 1;
+    transform: translateX(700px);
+}*/
+.slider .container:hover #social li{
+    transform: rotateY(0);
+}
+.slider .container:hover #social li:nth-child(1)
+{
+    transition-delay: 0s;
+}
+.slider .container:hover #social li:nth-child(2)
+{
+    transition-delay: 0.3s;
+}
+.slider .container:hover #social li:nth-child(3)
+{
+    transition-delay: 0.5s;
+}
+.slider .container:hover #social li:nth-child(4)
+{
+    transition-delay: 0.8s;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 40px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 40px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade{
+    animation-name: fade;
+    animation-delay: 2s;
+}
+@keyframes fade{
+    from{opacity: 0.1; transform: scale(2)}
+    to{opacity: 1; transform: scale(1)}
+}
+
+
+
+/* About Us............*/
+
+
+.mid{
+    width: 100%;
+    height: 600px;
+    background: silver;
+    margin-top: -100px;
+}
+.mid #t1{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background: #000033;
+}
+.mid h2{
+    margin-top: 90px;
+    line-height: 5;
+    color: aliceblue;
+}
+.mid #logo{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.mid #cont1{
+    height: auto;
+    width: 50%;
+    margin-top: 100px;
+    float: left;
+}
+.mid #logo img{
+    width: 70%;
+    margin-top: -80px;
+}
+
+.mid h3{
+    text-align: justify;
+    margin-right: 20%;
+    line-height: 2;
+    font-family: cursive;
+}
+
+
+
+
+.parallel{
+   background-image: url("img/poster.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/*  College.................*/
+
+
+.college{
+    width: 100%;
+    height: 600px;
+    background-color:  #ccccff;
+    position: relative;
+}
+.college #t2{
+    height: 100px;
+    width: 100%;
+    background: #000033;
+}
+.college h1{
+    text-align: center;
+    padding-top: 30px;
+    color: aliceblue;
+}
+.college .inn{
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    margin-left: 20%
+}
+.college .inn .container1{
+    height: 30%;
+    width: 40%;;
+    margin-left: 70px;
+    margin-top: 30px;
+    float: left;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s;
+    transform: scale(0);
+}
+.college .inn .container1 img{
+    width: 100%;
+    transition: 1s;
+}
+.college .inn .container1 p{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 1s;
+    transform: translateY(-120px) scale(0);
+}
+.college .inn .container1:hover img{
+    filter: blur(10px);
+    transform: scale(1.5);
+}
+.college .inn .container1:hover p{
+    transform: translateY(0px) scale(1);
+}
+
+
+
+/* Our Team................*/
+.team{
+    height: 700px;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+.team .tm{
+    height: 90%;
+    width: 60%;
+    margin-left: 20%
+}
+.team .tm .container2{
+    width: 30%;
+    height: 45%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 4%;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.team .tm .container2 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-left: -120px;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform:perspective(500px)rotateX(0deg);
+    filter: grayscale(100%)
+}
+.team .tm .container2 .cover{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+.team .tm .container2 .cover p{
+    margin-top: 100px;
+    color: white;
+}
+.team .tm .container2:hover .cover{
+    transform: translateY(0);
+}
+.team .tm .container2:hover img {
+    //transform:perspective(500px)rotateX(90deg);
+    filter: grayscale(0%)
+}
+.about{
+    height: 600px;
+    width: 100%;
+    background-color: #498683;
+    padding-top: 50px;
+}
+.about img{
+    width: 30%;
+    float: left;
+}
+.about .container3{
+    height: 90%;
+    width: 65%;
+    float: left;
+}
+.about .container3 h2{
+    line-height: 7;
+}
+.about .container3 ul li{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.3;
+    color: floralwhite;
+}
+
+
+
+.partner{
+    height: 400px;
+    width: 100%;
+}
+.partner #t3{
+    width: 100%;
+    height: 100px;
+    background: #000033;
+    text-align:center;
+}
+.partner h2{
+    line-height: 4;
+    color: azure;
+}
+.partner .prt{
+    height: 40%;
+    width: 60%;
+    margin-left: 20%;
+    overflow: hidden;
+}
+.back, .front{
+    padding: 15px;
+    background: silver;
+    cursor: pointer;
+}
+.back{
+    float: left;
+    margin-left: 180px;
+    margin-top: -100px;
+}
+.front{
+    float: right;
+    margin-right: 180px;
+    margin-top: -115px;
+}
+.back:hover, .front:hover{
+    background: gray;
+}
+.partner .prt img{
+    height: 100%;
+    transition: 2s;
+    transform: translateX(0);
+}
+
+
+
+#map{
+    height: 500px;
+    width: 100%;
+    background: white;
+}
+#map #map-container{
+    width: 50%;
+    height: 80%;
+    background: black;
+    margin-left: 10%;
+    float: left;
+}
+#map h2{
+    margin-left: 20%;
+    line-height: 4
+}
+
+
+#map #address{
+    width: 38%;
+    height: 80%;
+    //margin-left: 2%;
+    float: left;
+    background: black;
+    padding-left: 20px;
+}
+#map #address h4{
+    line-height: 4;
+    text-decoration: underline;
+    font-size: 1.2em;
+    color: silver;
+}
+#map #address p{
+    font-size: 1.3em;
+    font-family: monospace;
+    color: gray;
+}

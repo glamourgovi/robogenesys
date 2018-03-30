@@ -1,0 +1,155 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.my-navbar{
+    background: rgba(0,0,0,1);
+    //height: 80px;
+}
+.my-navbar a{
+    font-weight: bold; 
+    transition: 0.2s;
+    padding: 20px;
+}
+.my-navbar a:hover{
+    border-bottom: 2px solid white;
+}
+.parallelx{
+   background-image: url("poster.jpg");
+
+    /* Set a specific height */
+    min-height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    padding-top: 86px;
+}
+.my-poster{
+    background: rgba(0,0,0,0.5);
+}
+.my-row{
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+.my-col,.col{
+    text-align: center;
+}
+.my-col img{
+    opacity: 0.7;
+    width: 60%;
+}
+.my-col .quot{
+    width: 100%;
+}
+.quot img{
+    width: 100%;
+    opacity: 0.7;
+}
+.team{
+    padding-bottom: 2%;
+    background: radial-gradient(silver,black);
+    text-align: center;
+}
+.team h1{
+    color: papayawhip;
+    line-height: 3;
+}
+.gg{
+    padding: 10px;
+    text-align: center;
+}
+.myImg{
+    height: auto;
+    width: 250px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.myImg:hover h4{
+    color: blue;
+}
+.social ul li{
+    list-style: none;
+    height: 50px;
+    overflow: hidden;
+    
+}
+.social ul li img{
+    height: 100%;
+    transition: 1s;
+    transform: translateX(-50%);
+}
+.social ul li img:hover{
+    transform: translateX(0%);
+}
+.about{
+    background: url("img/animated-virtual-matrix-set-c1.jpg");
+    padding: 60px 20% 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abt{
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    padding: 0px 20px 10px;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,1);
+}
+.abt h3, .abt p{
+    color: white;
+    line-height: 2
+}
+.partner{
+    text-align: center;
+    background: rgba(0,0,0,1)
+}
+.partner h1{
+    line-height: 3;
+    color: aqua;
+}
+.pimg, .ptxt{
+    padding-top: 40px;
+}
+.ptxt{
+    text-align: left;
+}
+.ptxt h3{
+    line-height: 2;
+    color: darkgoldenrod;
+}
+.ptxt p{
+    color: azure;
+}
+.pimg img{
+    border-radius: 20px;
+}
+.parallelx2{
+   background-image: url("img/4.jpg");
+
+    /* Set a specific height */
+    min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    text-align: center;
+}
+.info{
+    text-align: left;
+    padding: 20px 10%;
+    background: rgba(0,0,0,0.6)
+}
+.parallelx2 h1{
+    line-height: 2;
+    color:aquamarine;
+}
+.info li{
+    line-height: 2;
+    color:floralwhite
+}
